@@ -1,0 +1,74 @@
+\chapter{Overview and Installation}
+
+\section{Introduction}
+
+The \gls{mpfip} is a low-cost, versatile microcomputer system featuring sophisticated software and hardware capabilities.
+It is not only ideal for those who intend to familiarize themselves with mirco-processing and advanced microcomputer hardware and software, but also can be used for many dedicated purposes and \gls{oem} applications such as industrial constrol and instrumentation.
+
+Good design techniques and the use of a Z-80 \gls{cpu} results in a high performance unit
+
+The Z80 microprocessor features a powerful instruction set, which has 158 instructions.
+The Z80 operates at \SI{2.5}{\MHz} and processes 8 bits of data at a time. Thus, Z80 is one of the most commonly used microprocessors with wide-ranging applications.
+
+The \gls{mpfip} uses a display panel that can display 20 characters using 16-segment font.
+All the 64 standard \gls{ascii} characters can be displayed.
+The display length corresponds with the 20-column printer.
+
+Printing at 48 lines per minute, the printer provides the means to permanently record the commands, data, programs, status, and other messages.
+Each character printed by the printer is in a 5 by 7 dot matrix.
+
+The keyboard has 49 keys.
+
+The operation of the \gls{mpfip} is controlled by an \SI{8}{\kibi\byte} monitor program which resides in the \gls{rom}.
+The monitor, aided by the \SI{4}{\kibi\byte} \gls{ram}, enables the user to enter a comprehensive set of single keystroke commands, which make it easier for the user to use the \gls{cpu}, memory, and I/O devices.
+This, the user can concentrate on microprocessor software development and application design.
+
+\clearpage
+
+\section{An Overview of \acrshort{mpfip} Specifications}
+
+\begin{enumerate}[label=\arabic*), noitemsep, leftmargin=*, parsep=0em]
+    \item \gls{cpu}: Z80
+    \item \gls{rom}: \SI{8}{\kibi\byte}
+    \item \gls{ram}: \SI{4}{\kibi\byte} \\(Refer to the system memory map illustrated in REFREF)
+    \item Contains a text editor
+    \item The \gls{mpfip} can execute program written in assembly language, because its \SI{8}{\kibi\byte} \gls{rom} contains a two-pass assembler, line assembler, and a disassembler.
+    \item Battery backup.
+    \item A 20-character display that can display a full 64 \gls{ascii} character set.
+    \item A 49-key standard typewriter keyboard.
+    \item \SI{8}{\kibi\byte} BASIC Interpreter provided as an option.
+\end{enumerate}
+
+Options for the \gls{mpfip} also include:
+
+\begin{itemize}[label=*, noitemsep, leftmargin=*, parsep=0em]
+    \item PRT-MPF-IP: a thermal printer
+    \item EPB-MPF-IP: an \gls{eprom} programmer board
+    \item SSB-MPF-IP: a speech synthesizer board
+    \item SGB-MPF-IP: a sound generation board
+    \item IOM-MPF-IP: an Input/Output and Memory board
+    \item EPB-MPF-IBP: an \gls{eprom} programmer board which can used on \gls{mpfip} or \gls{mpfi} at random.
+    \item FORTH-MPF-IP: an \SI{8}{\kibi\byte} \gls{eprom} which enables a user to program in FORTH language.
+    \item BASIC-MPF-IP: an \SI{8}{\kibi\byte} \gls{eprom} which enables a user to program in BASIC language.
+\end{itemize}
+
+Note:\\
+\hspace*{2em} In order to make it easier for the user to learn the operation of \gls{mpfip}, a comprehensive, yet easy-to-read, student work book is available which provides effective, explanation-exercise-answer formats on all key operations, applications and functions.
+
+\clearpage
+
+\section{Installation Procedure}
+
+\begin{enumerate}[label=\arabic*), leftmargin=*, parsep=0em]
+    \item If the \gls{mpfip} ist to be used with the PRT-MPF-IP, connect PRT-MPF-IP to the \gls{mpfip} first with a flat cable connector.
+    (For details, please refer to PRT-MPF-IP Printer Operation Manual.)
+    \item Insert the thermal paper into the printer as illustrated in PRT-MPF Printer Operation Manual, \MakeUppercase{\romannumeral 2} Installation Procedure.
+    Note that the finer surface of the thermal paper should face up, because that side of the paper is specially treated so that dot matrix characters can be formed by the heat produced by the thermal head of the printer.
+    \item Connect AC power adaptor (\SI{9}{\V}/\SI{1}{\A}) to the PRT-MFP-IP.
+    \item Connect AC power adaptor (\SI{9}{\V}/\SI{600}{\mA}) to the \gls{mpfip}.
+    \item When the display shows\\
+    \texttt{***MPF-I-PLUS***}\\
+    and the printer prints out the same, the \gls{mpfip} is ready to run.
+\end{enumerate}
+
+\clearpage
